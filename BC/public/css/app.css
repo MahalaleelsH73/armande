@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,500;1,700&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syncopate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+
+body {
+    background-color: rgb(5, 5, 32);
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(13deg, #f9d4ff 14%,#0d0e14 64%);
+    border-radius: 13px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(13deg, #c7ceff 14%,#f9d4ff 64%);
+}
+
+::-webkit-scrollbar-track{
+    background: #ffffff;
+    border-radius: 11px;
+    box-shadow: inset 7px 10px 12px #f0f0f0;
+}
+
+.nav-link {
+    color: #000;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.nav-link:hover {
+    color: rgb(253, 167, 7);
+}
+
+.nav-item {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+}
+
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  
+.sw-1 {
+    background-image: url('../images/wp2677604.jpg');
+    height: 40vmax;;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 2000px rgba(65, 105, 225, 0.63);
+}
+
+.sw-2 {
+    background-image: url('../images/no-room-for-research-scientists-entity.jpg');
+    height: 40vmax;;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sw-3 {
+    background-image: url('../images/wp3063633-microbiology-wallpapers.jpg');
+    height: 40vmax;;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 { 
+    font-family: 'Chakra Petch', sans-serif;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+@keyframes border-animation {
+    0%   {border-top: 2px solid orange;}
+    50%  {border-right: 2px solid orange;}
+    75%  {border-bottom: 2px solid blue;}
+    80%  {border-left: 2px solid blue;}
+    100% {
+            border-top: 2px solid orange;
+            border-right: 2px solid orange;
+            border-bottom: 2px solid blue;
+            border-left: 2px solid blue;
+    }
+}
+
+.swiper-button-next, .swiper-button-prev{
+    color: #fffb00;
+}
+
+.greensock {
+    overflow: hidden;
+    visibility:hidden;
+}
+
+h2 { 
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+}
+
+.wrapper {
+    margin: 10% 0 0 0;
+    border-left: 4px solid rgb(166, 255, 0);
+    overflow: hidden;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.bigline {
+    font-size: 3vw;
+    color: rgb(255, 0, 0);
+    margin: 0 0 0 14px;
+    padding: 0;
+    line-height: 0.8;
+    letter-spacing: -5px;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.introline {
+    font-size: 3vw;
+    margin: 0 0 0 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+p {
+    font-weight: bold;
+    margin: 0 0 0 6%;
+}
+
+.poster { 
+    background-color: #201515;
+}
+
+.poster-ab {
+    font-size: 2vw;
+    color: white;
+    font-family: 'Knewave', cursive;}
+
+.poster-ab-bold {
+    font-size: 2vw;
+    background: -webkit-linear-gradient(yellow, rgb(130, 12, 240));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Knewave', cursive;
+}
+
+.middle-name {
+    /* animation-name: border-animation; */
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+.divina {
+    font-size: 0.5vw;
+}
+
+.first-xxl {
+}
+
+p.introline {
+    color: rgb(255, 255, 255);
+}
+
+@media only screen and (min-width: 768px) {
+    #abk {
+        height: 53vh;
+        width: 80vh;
+    }
+    
+    .box {
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 768px) {  
+    .box {
+        height: 50px;
+    }
+}
+
+.titre {
+    max-width: 375px;
+    font-size: 1em;
+    color:rgb(247, 234, 234);
+    font-weight: bold;
+}
+
+b {
+    font-weight: bold;
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+}
+
+i {
+    color: #FB803F;
+    font-size: 2em;
+    margin: 1px 5px 0 5px;
+}
+
+.hastag {
+    color: blue;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.view {
+    margin: 10px 0 10px 0;
+}
+
+.red-dg {
+    /* box-shadow: inset 0 0 0 2000px rgba(4, 4, 179, 0.603) !important; */
+}
