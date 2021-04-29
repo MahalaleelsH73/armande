@@ -21,7 +21,6 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-
     <link href="{{ asset('/css/app.css') }}" rel="stylesheet"/>
     </head>
     <body>
@@ -69,7 +68,7 @@
         </nav>
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide sw-1">
+                <div class="swiper-slide sw-1 d-flex flex-column">
                     <h1 class="sw-1-h1 p-3">livres, articles & documentations sur la microbiologie</h1>
                 </div>
                 <div class="swiper-slide sw-2"></div>
@@ -84,7 +83,6 @@
                 <p class="introline">Livres</p>
                 <h1 class="bigline">Consultés</1>
             </div>
-
             <div class="d-flex flex-row justify-content-center">
                 <div class="view mr-4">
                     <img src="{{ asset('/images/livres/GUEST_61aa333d-a700-4986-9b03-27ff581d4faf.jpeg') }}" class="img-fluid box" alt="">
@@ -120,7 +118,8 @@
             <div class="d-flex flex-row justify-content-between poster">
                 <div class="view" id="idview">
                     <img src="{{ asset('/images/KxsGAtfxQh64R7hKjG46_56375769_655402904914852_2909148359384104960_o.jpg') }}" class="img-fluid" id="abk" alt="">
-                    <div class="mask flex-center">
+                    <div class="mask flex-center xp-mask">
+                        <!-- <h5 class="over-h5">La Docteur met à disposition des livres & articles</h5> -->
                     </div>
                 </div> 
                 <div class="d-flex flex-column justify-content-start">
@@ -140,6 +139,11 @@
                                 <a href="fb.com"><i class="fab fa-facebook"></i></a>
                             </div>
                             <h2 class="titre">Docteur en Microbiologie</h2>
+                            <b class="hd-purple">Newsletter</b>
+                            <div class="newsletter md-form input-with-post-icon">
+                                <i class="fab fa-apple input-prefix" style="color: #fff;"></i>
+                                <input type="text" id="exampleForm2" class="form-control" placeholder="Email">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -182,6 +186,12 @@
         <script>
             document.querySelector("video").play();
         </script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.js"></script>        
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
