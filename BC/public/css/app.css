@@ -155,14 +155,11 @@ p {
     margin: 0 0 0 6%;
 }
 
-.poster { 
-    background-color: #201515;
-}
-
 .poster-ab {
     font-size: 2vw;
     color: white;
-    font-family: 'Knewave', cursive;}
+    font-family: 'Poiret One', cursive;
+}
 
 .poster-ab-bold {
     font-size: 2vw;
@@ -171,11 +168,17 @@ p {
     -webkit-text-fill-color: transparent;
     font-weight: bold;
     text-transform: uppercase;
-    font-family: 'Knewave', cursive;
+    font-family: 'Poiret One', cursive;
 }
 
 .middle-name {
-    /* animation-name: border-animation; */
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.603);
+    text-align: center;
+    align-items: center;
+    height: 33% !important;
+    width: 100% !important;
     animation-duration: 7s;
     animation-iteration-count: infinite;
 }
@@ -220,7 +223,7 @@ b {
 
 i {
     color: #FB803F;
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin: 1px 5px 0 5px;
 }
 
@@ -287,11 +290,11 @@ input::placeholder {
 }
 
 #idview:hover #abk, #idview:focus #abk {
-    -ms-transform: scale(1.5);
-    -moz-transform: scale(1.5);
-    -webkit-transform: scale(1.5);
-    -o-transform: scale(1.5);
-    transform: scale(1.5);
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 .over-h5 {
@@ -301,4 +304,14 @@ input::placeholder {
 
 #idview:hover .mask .over-h5, #idview:focus .mask .over-h5 {
     display: block;
+}
+
+.fa-long-arrow-alt-right {
+    color: #fff;
+    font-size: 1vw;
+}
+
+.btn-outline-primary {
+    color: #fff !important;
+    font-weight: bold;
 }

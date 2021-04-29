@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" sizes="180x180">
-    <link rel="icon" href="img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-    <link rel="manifest" href="img/favicons/manifest.json">
-    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#7952b3">
-    <link rel="icon" href="img/favicons/favicon.ico">
-    <script src="https://kit.fontawesome.com/bf100fb9f8.js" crossorigin="anonymous"></script>
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-    <link href="{{ asset('/css/app.css') }}" rel="stylesheet"/>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" sizes="180x180">
+        <link rel="icon" href="img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+        <link rel="icon" href="img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+        <link rel="manifest" href="img/favicons/manifest.json">
+        <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#7952b3">
+        <link rel="icon" href="img/favicons/favicon.ico">
+        <script src="https://kit.fontawesome.com/bf100fb9f8.js" crossorigin="anonymous"></script>
+        <link rel="dns-prefetch" href="//fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+        <link href="{{ asset('/css/app.css') }}" rel="stylesheet"/>
     </head>
-    <body>
+    <body id="body">
         <nav class="navbar navbar-expand-lg py-2 sticky-top bg-light">
             <a class="navbar-brand" href="#"><img src="{{ asset('/logoWd.png') }}" alt="" height="50" width="50"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,38 +31,38 @@
             </button>
             <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
                 <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">A propos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Mes médias</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Boutique en ligne</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Mannéquinat</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Mes livres</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contacts</a>
-                </li>
-                <li class="nav-item dropdown d-none">
-                    <a class="nav-link dropdown-toggle" id="dropdown08" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown08">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mes médias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Boutique en ligne</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mannéquinat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mes livres</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacts</a>
+                    </li>
+                    <li class="nav-item dropdown d-none">
+                        <a class="nav-link dropdown-toggle" id="dropdown08" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown08">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -115,35 +115,33 @@
                     </div>
                 </div>
             </div>
+            <div class="justify-content-center align-items-center text-center m-5">
+                <button type="button" class="btn btn-outline-primary btn-rounded">Cliquer pour tout découvrir<i class="fas fa-long-arrow-alt-right"></i></button>
+            </div>
             <div class="d-flex flex-row justify-content-between poster">
                 <div class="view" id="idview">
                     <img src="{{ asset('/images/KxsGAtfxQh64R7hKjG46_56375769_655402904914852_2909148359384104960_o.jpg') }}" class="img-fluid" id="abk" alt="">
-                    <div class="mask flex-center xp-mask">
-                        <!-- <h5 class="over-h5">La Docteur met à disposition des livres & articles</h5> -->
+                    <div class="mask flex-center xp-mask d-flex flex-column justify-content-end">
+                        <div class="d-flex flex-row justify-content-center align-items-center text-center middle-name">
+                            <h3 class="poster-ab mr-2">Armande</h3>
+                            <h3 class="poster-ab-bold mr-2">Boko | </h3>
+                            <h2 class="titre">Docteur en Microbiologie</h2>
+                                <!-- <a href="skype.msft"><i class="fab fa-skype"></i></a>
+                                <a href="linkedin.in"><i class="fab fa-linkedin"></i></a>
+                                <a href="whatsapp.chart"><i class="fab fa-whatsapp"></i></a>
+                                <a href="fb.com"><i class="fab fa-facebook"></i></a> -->
+                        </div>
                     </div>
                 </div> 
+
                 <div class="d-flex flex-column justify-content-start">
                     <div class="view">
                         <video width="600" class="img-fluid" autoplay loop muted>
-                            <source src="{{  asset('/images/LOVETOUR.mp4')   }}" type="video/mp4">
+                            <source src="{{  asset('/images/Futurist.mp4')   }}" type="video/mp4">
                             Sorry, your browser doesn't support embedded videos.
                         </video>
                         <div class="mask flex-center d-flex flex-column red-dg">
-                            <h2 class="hastag">#Follow Us</h2>
-                            <div class="d-flex flex-row justify-content-start middle-name">
-                                <h3 class="poster-ab mr-2">Armande</h3>
-                                <h3 class="poster-ab-bold mr-2">Boko</h3>
-                                <a href="skype.msft"><i class="fab fa-skype"></i></a>
-                                <a href="linkedin.in"><i class="fab fa-linkedin"></i></a>
-                                <a href="whatsapp.chart"><i class="fab fa-whatsapp"></i></a>
-                                <a href="fb.com"><i class="fab fa-facebook"></i></a>
-                            </div>
-                            <h2 class="titre">Docteur en Microbiologie</h2>
-                            <b class="hd-purple">Newsletter</b>
-                            <div class="newsletter md-form input-with-post-icon">
-                                <i class="fab fa-apple input-prefix" style="color: #fff;"></i>
-                                <input type="text" id="exampleForm2" class="form-control" placeholder="Email">
-                            </div>
+                            <!-- <h2 class="hastag">#Follow Us</h2> -->
                         </div>
                     </div>
                 </div>
@@ -185,6 +183,15 @@
         </script>
         <script>
             document.querySelector("video").play();
+
+            let myGreeting = setInterval(function() {
+                var x = document.getElementById("body");
+                if (!navigator.onLine) {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }        
+            }, 2000)
         </script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.js"></script>        
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
