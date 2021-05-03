@@ -3,9 +3,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Syncopate&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Rubik+Mono+One&display=swap');
+
+@font-face {
+    font-family: 'Rhema';
+    src: url('../Kaushan_Script/KaushanScript-Regular.ttf');
+}
 
 body {
     background-color: rgb(5, 5, 32);
+    overflow-x: hidden !important;
+}
+
+#app {
+    background-color: rgb(255, 255, 255);
 }
 
 ::-webkit-scrollbar {
@@ -85,7 +97,7 @@ body {
 }
 
 .sw-3 {
-    background-image: url('../images/wp3063633-microbiology-wallpapers.jpg');
+    background-image: url('../images/david-clode-P6j0WytkqPg-unsplash.jpg');
     height: 40vmax;;
     background-position: center center;
     background-size: cover;
@@ -104,11 +116,40 @@ h1 {
     50%  {border-right: 2px solid orange;}
     75%  {border-bottom: 2px solid blue;}
     80%  {border-left: 2px solid blue;}
+
     100% {
-            border-top: 2px solid orange;
-            border-right: 2px solid orange;
-            border-bottom: 2px solid blue;
-            border-left: 2px solid blue;
+        border-top: 2px solid orange;
+        border-right: 2px solid orange;
+        border-bottom: 2px solid blue;
+        border-left: 2px solid blue;
+    }
+}
+
+@keyframes text-gradient-animation {
+    0%  {
+            background: -webkit-linear-gradient(rgb(255, 255, 0), rgb(130, 12, 240)); 
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; 
+        }
+
+    50% {   
+            background: -webkit-linear-gradient(rgb(130, 12, 240), rgb(255, 0, 0));    
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; 
+        }
+
+    100%{  
+            background: -webkit-linear-gradient(rgb(2, 3, 24), rgb(255, 255, 255));    
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; 
+        }
+}
+
+@keyframes slidedown {
+    to {
+     -webkit-transform: translate(0px, 300px);
+     -ms-transform: translate(0px, 300px);
+     transform: translate(0px, 300px);
     }
 }
 
@@ -128,7 +169,7 @@ h2 {
 
 .wrapper {
     margin: 10% 0 0 0;
-    border-left: 4px solid rgb(166, 255, 0);
+    border-left: 0px solid rgb(166, 255, 0);
     overflow: hidden;
     font-family: 'Chakra Petch', sans-serif;
 }
@@ -158,29 +199,39 @@ p {
 .poster-ab {
     font-size: 2vw;
     color: white;
-    font-family: 'Poiret One', cursive;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: bold;
 }
 
 .poster-ab-bold {
     font-size: 2vw;
-    background: -webkit-linear-gradient(yellow, rgb(130, 12, 240));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    /* background: -webkit-linear-gradient(rgb(130, 12, 240), rgb(255, 0, 0));
+    animation: text-gradient-animation 3s cubic-bezier(0,0.2,0.8,1) infinite; */
     font-weight: bold;
     text-transform: uppercase;
-    font-family: 'Poiret One', cursive;
+    font-family: 'Rubik Mono One', sans-serif;
 }
 
 .middle-name {
-    display: flex;
+    display: none;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.603);
+    background-color: rgba(0, 60, 255, 0.603);
     text-align: center;
     align-items: center;
     height: 33% !important;
     width: 100% !important;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
+}
+
+#idview:hover .middle-name, #idview:focus .middle-name {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    animation: slidedown 1s ease-in;
+    -webkit-animation-direction: alternate-reverse;
+    animation-direction: reverse;
+    background-color: rgba(15, 58, 201, 0.575);
 }
 
 .divina {
@@ -188,7 +239,7 @@ p {
 }
 
 p.introline {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 @media only screen and (min-width: 768px) {
@@ -210,9 +261,12 @@ p.introline {
 
 .titre {
     max-width: 375px;
-    font-size: 1em;
+    font-size: 1.1vw;
     color:rgb(247, 234, 234);
     font-weight: bold;
+    font-family: 'Chakra Petch', sans-serif;
+    text-orientation: sideways-right;
+    text-transform: uppercase;
 }
 
 b {
@@ -308,10 +362,63 @@ input::placeholder {
 
 .fa-long-arrow-alt-right {
     color: #fff;
-    font-size: 1vw;
 }
 
 .btn-outline-primary {
     color: #fff !important;
-    font-weight: bold;
+    font-weight: bold !important;
+    border-color: blue !important;
+    background-color: blue !important;
+}
+
+.btn-outline-primary:hover {
+    color: #fff !important;
+    border-color: blue !important;
+    background-color: blue !important;
+}
+
+.btn-outline-primary: { 
+    color: #fff !important;
+    border-color: #CFAF2F !important;
+    background-color: #CFAF2F !important;
+}
+
+.full-center {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: -webkit-translate(-50%, -50%);
+    transform: -moz-translate(-50%, -50%);
+    transform: -ms-translate(-50%, -50%);
+}
+
+.btn-light-blue {
+    background-color: #2196F3 !important;
+    color: #fff !important;
+    font-weight: bold !important;
+    font-size: 1.2vw;
+    padding: 1em 3em 1em 3em;
+}
+
+
+.btn-light {
+    background-color: rgb(255, 255, 255) !important;
+    color: #2196F3 !important;
+    font-weight: bold !important;
+    font-size: 1.2vw;
+    padding: 1em 3em 1em 3em;
+}
+
+.y-h {
+    color: #92a5de;
+    text-shadow: 0px 0px 0 #899CD5, 1px 1px 0 #8194CD, 2px 2px 0 #788BC4, 3px 3px 0 #6F82BB, 4px 4px 0 #677AB3, 5px 5px 0 #5E71AA, 6px 6px 0 #5568A1, 7px 7px 0 #4C5F98, 8px 8px 0 #445790, 9px 9px 0 #3B4E87, 10px 10px 0 #32457E, 11px 11px 0 #2A3D76, 12px 12px 0 #21346D, 13px 13px 0 #182B64, 14px 14px 0 #0F225B, 15px 15px 0 #071A53, 16px 16px 0 #02114A, 17px 17px 0 #0B0841, 18px 18px 0 #130039, 19px 19px 0 #1C0930, 20px 20px 0 #251227, 21px 21px 20px rgba(0,0,0,1), 21px 21px 1px rgba(0,0,0,0.5), 0px 0px 20px rgba(0,0,0,.2);
+}
+
+.bg-dark {
+    background-color: rgb(5, 5, 32) !important;
+}
+
+.nav-link { 
+    color:rgb(247, 234, 234);
 }
