@@ -5,15 +5,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400&display=swap');
 
 @font-face {
     font-family: 'Rhema';
     src: url('../Kaushan_Script/KaushanScript-Regular.ttf');
 }
 
-body {
+body, html {
+    height: 100%;
+    width: 100%;
     background-color: rgb(5, 5, 32);
     overflow-x: hidden !important;
+}
+
+.swiper-slide {
+    background-attachment: fixed !important;
 }
 
 #app {
@@ -78,10 +85,10 @@ body {
     -webkit-align-items: center;
     align-items: center;
   }
-  
+
 .sw-1 {
     background-image: url('../images/wp2677604.jpg');
-    height: 40vmax;;
+    height: 38vmax;;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -90,21 +97,22 @@ body {
 
 .sw-2 {
     background-image: url('../images/no-room-for-research-scientists-entity.jpg');
-    height: 40vmax;;
+    height: 38vmax;;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+
 }
 
 .sw-3 {
-    background-image: url('../images/david-clode-P6j0WytkqPg-unsplash.jpg');
-    height: 40vmax;;
+    background-image: url('../images/chemicalsciencebg.jpg');
+    height: 38vmax;;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-h1 { 
+h1 {
     font-family: 'Chakra Petch', sans-serif;
     text-transform: uppercase;
     color: rgb(255, 255, 255);
@@ -127,21 +135,21 @@ h1 {
 
 @keyframes text-gradient-animation {
     0%  {
-            background: -webkit-linear-gradient(rgb(255, 255, 0), rgb(130, 12, 240)); 
+            background: -webkit-linear-gradient(rgb(255, 255, 0), rgb(130, 12, 240));
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent; 
+            -webkit-text-fill-color: transparent;
         }
 
-    50% {   
-            background: -webkit-linear-gradient(rgb(130, 12, 240), rgb(255, 0, 0));    
+    50% {
+            background: -webkit-linear-gradient(rgb(130, 12, 240), rgb(255, 0, 0));
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent; 
+            -webkit-text-fill-color: transparent;
         }
 
-    100%{  
-            background: -webkit-linear-gradient(rgb(2, 3, 24), rgb(255, 255, 255));    
+    100%{
+            background: -webkit-linear-gradient(rgb(2, 3, 24), rgb(255, 255, 255));
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent; 
+            -webkit-text-fill-color: transparent;
         }
 }
 
@@ -154,7 +162,8 @@ h1 {
 }
 
 .swiper-button-next, .swiper-button-prev{
-    color: #fffb00;
+    color: #fff;
+    padding: 1em 2em 1em 2em;
 }
 
 .greensock {
@@ -162,7 +171,7 @@ h1 {
     visibility:hidden;
 }
 
-h2 { 
+h2 {
     font-family: 'Poiret One', cursive;
     font-weight: bold;
 }
@@ -171,7 +180,7 @@ h2 {
     margin: 10% 0 0 0;
     border-left: 0px solid rgb(166, 255, 0);
     overflow: hidden;
-    font-family: 'Chakra Petch', sans-serif;
+    /* font-family: 'Chakra Petch', sans-serif; */
 }
 
 .bigline {
@@ -181,7 +190,6 @@ h2 {
     padding: 0;
     line-height: 0.8;
     letter-spacing: -5px;
-    font-family: 'Chakra Petch', sans-serif;
 }
 
 .introline {
@@ -205,21 +213,21 @@ p {
 
 .poster-ab-bold {
     font-size: 2vw;
-    /* background: -webkit-linear-gradient(rgb(130, 12, 240), rgb(255, 0, 0));
-    animation: text-gradient-animation 3s cubic-bezier(0,0.2,0.8,1) infinite; */
+    background: -webkit-linear-gradient(rgb(130, 12, 240), rgb(255, 0, 0));
+    animation: text-gradient-animation 3s cubic-bezier(0,0.2,0.8,1) infinite;
     font-weight: bold;
     text-transform: uppercase;
-    font-family: 'Rubik Mono One', sans-serif;
 }
 
 .middle-name {
     display: none;
     justify-content: center;
-    background-color: rgba(0, 60, 255, 0.603);
     text-align: center;
     align-items: center;
     height: 33% !important;
-    width: 100% !important;
+    margin-bottom: 33px;
+    margin-left: -23px;
+    padding: 0 10px 0 17px;
 }
 
 #idview:hover .middle-name, #idview:focus .middle-name {
@@ -231,7 +239,7 @@ p {
     animation: slidedown 1s ease-in;
     -webkit-animation-direction: alternate-reverse;
     animation-direction: reverse;
-    background-color: rgba(15, 58, 201, 0.575);
+    background-color: rgba(7, 7, 32, 0.747);
 }
 
 .divina {
@@ -244,16 +252,15 @@ p.introline {
 
 @media only screen and (min-width: 768px) {
     #abk {
-        height: 53vh;
-        width: 80vh;
+        width: 85%
     }
-    
+
     .box {
         height: 200px;
     }
 }
 
-@media only screen and (max-width: 768px) {  
+@media only screen and (max-width: 768px) {
     .box {
         height: 50px;
     }
@@ -271,17 +278,12 @@ p.introline {
 
 b {
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.1em;
     color: rgb(255, 255, 255);
 }
 
-i {
-    color: #FB803F;
-    font-size: 1.2em;
-    margin: 1px 5px 0 5px;
-}
-
 .hastag {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: blue;
     text-transform: capitalize;
     font-weight: bold;
@@ -299,10 +301,18 @@ i {
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
-    background-color: #CFAF2F;
+    background-color: #0099ff;
     outline: none;
     color: #fff;
+    padding: 9px;
     padding-left: 15px;
+    padding-right: 15px;
+    border-width: 0px !important;
+    width: 25vw;
+}
+
+.fa-envelope {
+    color: #fff;
 }
 
 #exampleForm2:focus {
@@ -317,14 +327,8 @@ i {
     outline: none !important;
 }
 
-i.fa-apple {
-    font-size: 1em;
-    padding: 13px;    
-    margin-right: -16px;
-    margin-top: -4px;
-    background-color: #0d0e14;
-    border-radius: 50%;
-    right: 0;
+i.fa-envelope {
+    font-size: 1.5em;
 }
 
 .hd-purple {
@@ -342,6 +346,7 @@ input::placeholder {
     -o-transition: all .5s;
     transition: all .5s;
 }
+
 
 #idview:hover #abk, #idview:focus #abk {
     -ms-transform: scale(1.2);
@@ -377,7 +382,7 @@ input::placeholder {
     background-color: blue !important;
 }
 
-.btn-outline-primary: { 
+.btn-outline-primary: {
     color: #fff !important;
     border-color: #CFAF2F !important;
     background-color: #CFAF2F !important;
@@ -419,6 +424,135 @@ input::placeholder {
     background-color: rgb(5, 5, 32) !important;
 }
 
-.nav-link { 
+.nav-link {
     color:rgb(247, 234, 234);
+    font-weight: bold;
+}
+
+.media {
+    padding: 7px;
+    z-index: 9999;
+    color: #fff !important;
+    right: 1%;
+    bottom: 1%;
+    position: fixed;
+    border-radius: 21px;
+    box-shadow: -44px 51px 44px 2px rgba(0,0,0,0.17);
+    -webkit-box-shadow: -44px 51px 44px 2px rgba(0,0,0,0.17);
+    -moz-box-shadow: -44px 51px 44px 2px rgba(0,0,0,0.17);
+}
+
+.fabulous {
+    vertical-align: middle;
+    width: 35px;
+    height: 35px;
+    border-color: transparent;
+    border-width: 0px;
+    margin: 5px;
+}
+
+.article-author {
+    text-transform: capitalize;
+    font-size: small;
+}
+
+.article-title {
+    text-transform: uppercase;
+    font-size: small;
+    color: #000;
+    font-weight: bold;
+}
+
+.article-pub, .article-stats {
+    font-size: small;
+}
+
+.v-2 {
+    display: none;
+}
+
+.article-cover-img:hover > .v-2 {
+    display: block;
+}
+
+.article-cover-img:hover > .v-1 {
+    display: none;
+}
+
+.input-prefix {
+    margin-left: -1.3em !important;
+    margin-top: 9px;
+}
+
+.payement-apps {
+    color: #;
+}
+
+.mstc {
+    height: 75% !important;
+}
+
+h4.m-1, .content-bk {
+    letter-spacing: 3px;
+}
+
+blockquote {
+    margin: 0;
+}
+
+blockquote p {
+    padding: 30px;
+    background: #eee;
+    border-radius: 10px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.3em;
+}
+
+.fa-check {
+    color: #b9ab77;
+    font-size: 1.5em;
+    
+    margin: 7px;
+}
+
+h5.mt-2 {
+    color: #000;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.curved-div svg {
+    display: block;
+}
+
+.curved-div {
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);        
+    color: #fff;
+}
+
+@media only screen and (min-width: 730px) {
+    .payement-apps {
+        height: 150px !important;
+    }    
+}
+
+.footer {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1013%26quot%3b)' fill='none'%3e%3cpath d='M 0%2c280 C 57.6%2c225.4 172.8%2c19.8 288%2c7 C 403.2%2c-5.8 460.8%2c209 576%2c216 C 691.2%2c223 748.8%2c43.6 864%2c42 C 979.2%2c40.4 1036.8%2c209.4 1152%2c208 C 1267.2%2c206.6 1382.4%2c69.6 1440%2c35L1440 560L0 560z' fill='%23184a7e'%3e%3c/path%3e%3cpath d='M 0%2c402 C 19.2%2c421 57.6%2c498.8 96%2c497 C 134.4%2c495.2 153.6%2c381 192%2c393 C 230.4%2c405 249.6%2c577 288%2c557 C 326.4%2c537 345.6%2c319 384%2c293 C 422.4%2c267 441.6%2c427.4 480%2c427 C 518.4%2c426.6 537.6%2c277.8 576%2c291 C 614.4%2c304.2 633.6%2c493 672%2c493 C 710.4%2c493 729.6%2c297.6 768%2c291 C 806.4%2c284.4 825.6%2c444.2 864%2c460 C 902.4%2c475.8 921.6%2c355 960%2c370 C 998.4%2c385 1017.6%2c551 1056%2c535 C 1094.4%2c519 1113.6%2c302.8 1152%2c290 C 1190.4%2c277.2 1209.6%2c471.2 1248%2c471 C 1286.4%2c470.8 1305.6%2c289.4 1344%2c289 C 1382.4%2c288.6 1420.8%2c433 1440%2c469L1440 560L0 560z' fill='%232264ab'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1013'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.712);
+    height: 400px;
+}
+
+.footer-h3 {
+    color: #FF5733;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.footer-p3 {
+    font-size: small;
+    color: rgb(255, 255, 255);
 }
