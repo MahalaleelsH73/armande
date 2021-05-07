@@ -100,34 +100,32 @@
                     {{-- <h1 class="bigline">Consultés</1> --}}
                 </div>
                 <div class="d-flex flex-row justify-content-center">
-                    <div class="view mr-4">
+                    <div class="view m-4">
                         <img src="{{ asset('/images/livres/1260258998.jpeg') }}" class="img-fluid box" alt="">
-                        <div class="mask flex-center">
+                        <div class="mask d-flex flex-column flex-center over-view-blend">
+                            <h5 class="index-author">Armanda Boko</h5>
+                            <button type="button" class="btn btn-outline-info waves-effect">Télécharger</button>
                         </div>
                     </div>
-                    <div class="view mr-4">
+                    <div class="view m-4">
                         <img src="{{ asset('/images/livres/RPX526.jpg') }}" class="img-fluid box" alt="">
-                        <div class="mask flex-center">
+                        <div class="mask d-flex flex-column flex-center over-view-blend">
+                            <h5 class="index-author">Armanda Boko</h5>
+                            <button type="button" class="btn btn-outline-info waves-effect">Télécharger</button>
                         </div>
                     </div>
-                    <div class="view mr-4">
-                        <img src="{{ asset('/images/livres/-bigcovers-0134688643.jpeg') }}" class="img-fluid box" alt="">
-                        <div class="mask flex-center">
-                        </div>
-                    </div>
-                    <div class="view mr-4">
+                    <div class="view m-4">
                         <img src="{{ asset('/images/livres/MICROBIOLOGY.jpg') }}" class="img-fluid box" alt="">
-                        <div class="mask flex-center">
+                        <div class="mask d-flex flex-column flex-center over-view-blend">
+                            <h5 class="index-author">Armanda Boko</h5>
+                            <button type="button" class="btn btn-outline-info waves-effect">Télécharger</button>
                         </div>
                     </div>
-                    <div class="view mr-4">
-                        <img src="{{ asset('/images/livres/0321712420.jpg') }}" class="img-fluid box" alt="">
-                        <div class="mask flex-center">
-                        </div>
-                    </div>
-                    <div class="view">
+                    <div class="view m-4">
                         <img src="{{ asset('/images/livres/Jawetz-Melnick-Adelbergs-Medical-Microbiology-28-E.jpg') }}" class="img-fluid box" alt="">
-                        <div class="mask flex-center">
+                        <div class="mask d-flex flex-column flex-center over-view-blend">
+                            <h5 class="index-author">Armanda Boko</h5>
+                            <button type="button" class="btn btn-outline-info waves-effect">Télécharger</button>
                         </div>
                     </div>
                 </div>
@@ -151,7 +149,7 @@
                                 Sorry, your browser doesn't support embedded videos.
                             </video>
                             <div class="mask flex-center d-flex flex-column red-dg">
-                                <!-- <h2 class="hastag">Follow Us</h2> -->
+
                             </div>
                         </div>
                     </div>
@@ -337,17 +335,25 @@
         </div>
     </div>
     <div class="footer d-flex flex-row justify-content-around py-4 pt-5">
-        <div class="footer-item m-3 d-flex flex-column align-items-center text-center">
+        <div class="footer-item m-3 d-flex flex-column align-items-start">
             <h3 class="footer-h3 mt-3">Newsletter</h3>
+            <h5 class="text-center mt-2">S'abonner à la newsletter pour suivre nos articles</h5>
+            <h5 class="text-center mt-2">Support Clients</h5>
         </div>
-        <div class="footer-item m-3 d-flex flex-column justify-content align-items-center text-center">
+        <div class="footer-item m-3 d-flex flex-column align-items-start">
             <h3 class="footer-h3 mt-3">Nous contacter</h3>
+            <h5 class="text-center mt-2">armanda.boko@smart.app</h5>
+            <h2 class="hastag">Follow Us</h2>
         </div>
-        <div class="footer-item m-3 d-flex flex-column justify-content align-items-center text-center">
+        <div class="footer-item m-3 d-flex flex-column align-items-start">
             <h3 class="footer-h3 mt-3">Plus de services</h3>
+            <h5 class="text-center mt-2">Mannequinat et Mode</h5>
+            <h5 class="text-center mt-2">Assistance</h5>
+            <h5 class="text-center mt-2">Motivation & Mentoring</h5>
         </div>
-        <div class="footer-item m-3 d-flex flex-column justify-content align-items-center text-center">
-            <h3 class="footer-h3 mt-3">Sitemap</h3>
+        <div class="footer-item m-3 d-flex flex-column align-items-start">
+            <h3 class="footer-h3 mt-3">Copyright</h3>
+            <h5 class="text-center mt-2">© 2021 Rhema Signum & BitishIOW</h5>
         </div>
     </div>
         <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
