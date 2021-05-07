@@ -101,7 +101,7 @@
                 </div>
                 <div class="d-flex flex-row justify-content-center">
                     <div class="view mr-4">
-                        <img src="{{ asset('/images/livres/GUEST_61aa333d-a700-4986-9b03-27ff581d4faf.jpeg') }}" class="img-fluid box" alt="">
+                        <img src="{{ asset('/images/livres/1260258998.jpeg') }}" class="img-fluid box" alt="">
                         <div class="mask flex-center">
                         </div>
                     </div>
@@ -132,7 +132,7 @@
                     </div>
                 </div>
                 <div class="justify-content-center align-items-center text-center m-5">
-                    <button type="button" class="btn btn-outline-primary btn-rounded btn-sm"><b>Cliquer pour tout découvrir <i class="fas fa-long-arrow-alt-right ml-1"></i></b></button>
+                    <button type="button" class="btn btn-outline-primary btn-rounded btn-lg"><b>Cliquer pour tout découvrir <i class="fas fa-long-arrow-alt-right ml-1"></i></b></button>
                 </div>
                 <div class="row poster">
                     <div class="view col-md-4 col-sm-4" id="idview">
@@ -264,20 +264,19 @@
                         </div>
                     </div>
                 </div>
-            <div class="d-flex flex-column media">
-                <div class="input-with-post-icon">
+                <div class="input-with-post-icon media-nl">
                     <div class="d-flex flex-row">
                         <input type="text" id="exampleForm2" class="newsletter-form" placeholder="@Email pour s'abonner au Newsletter">
                         <i class="fas fa-envelope input-prefix md-avatar rounded-circle"></i>
                     </div>
                 </div>
+            <div class="d-flex flex-column media">
                 <div class="d-flex flex-row mt-3">
                     <a href="https://wa.me/67236500"><img class="fabulous shadow-lg waves-1 md-avatar rounded-circle" src="{{ asset('/social-whatsapp-circle-512.png') }}"/></a>
                     <a href="https://fb.me/"><img class="fabulous shadow-lg waves-2 md-avatar rounded-circle" src="{{ asset('/Facebook_Logo.png') }}"/></a>
                     <a href="https://twitter.com/armandaboko"><img class="fabulous shadow-lg waves-3 md-avatar rounded-circle" src="{{ asset('/twitter.png') }}"/></a>
                     <a href="https://instagram.me/"><img class="fabulous shadow-lg waves-4 md-avatar rounded-circle" src="{{ asset('/3D-Instagram-logo-PNG.png') }}"/></a>
                     <a href="https://instagram.me/"><img class="fabulous shadow-lg waves-4 md-avatar rounded-circle" src="{{ asset('/images/telegram_logo.png') }}"/></a>
-
                 </div>
             </div>
         </div>
