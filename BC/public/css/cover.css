@@ -137,6 +137,10 @@ h1 {
     font-size: 14px;
 }
 
+h1 {
+    font-size: 2em;
+}
+
 .sticky {
     background-color: #0099ff !important;
     position: fixed;
