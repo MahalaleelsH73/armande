@@ -21,19 +21,62 @@
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+        <link href="{{ asset('/css/app.css') }}" rel="stylesheet"/>
         <link href="{{ asset('/css/cover.css') }}" rel="stylesheet"/>
     </head>
     <body>
         <div class="cover-container d-flex flex-column justify-content-center align-items-center text-center">
-            <h4 class="runaway">runaway <em class="sharpe">#</em><em class="fashion-shows">fashion shows</em></h4>
-            <h1>Armanda Boko partage avec vous sa passion pour la mode, Vision sapologie</h1>
+            <nav class="navbar shadow-lg navbar-expand-lg py-2 bg-dark mb-5" id="myHeader">
+                <a class="navbar-brand" href=""><img src="{{ asset('/wb-logo-light.svg') }}" alt="" height="50" width="200"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="">Accueil <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">A propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Mes médias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Boutique en ligne</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="fashion">Mannéquinat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Articles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Contacts</a>
+                        </li>
+                        <li class="nav-item dropdown d-none">
+                            <a class="nav-link dropdown-toggle" id="dropdown08" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown08">
+                                <a class="dropdown-item" href="">Action</a>
+                                <a class="dropdown-item" href="">Another action</a>
+                                <a class="dropdown-item" href="">Something else here</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <span><em class="fashion-shows"><h4 class="runaway">#runaway</h4></em></span>
+            <h1 class="s-h1">Armanda Boko partage avec vous sa passion pour la mode, Vision sapologie</h1>
             <svg version="1.1" id="line_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="10px" xml:space="preserve">
-                <path class="path2" fill="#01a09e" stroke-width="3" stroke="#01a09e" d="M0 0 l1120 0"/>
+                <path class="path2" fill="#01a09e" stroke-width="3" stroke="rgb(255, 255, 0)" d="M0 0 l1120 0"/>
             </svg>
             <img src="{{ asset('/images/IMG-20210502-WA0051-removebg-preview.png') }}" alt="" srcset="" class="mt-3 md-avatar rounded-circle" width="50px" height="50px">
         </div>
         <div class="container grid-container full-bottom">
-            <div class="grid-item"><img src="{{ asset('/images/fashion/1.png') }}" alt="" srcset="" class="img-fluid"></div>
+            <div class="grid-item"><img src="{{ asset('/images/fashion/lfw.jpg') }}" alt="" srcset="" class="img-fluid"></div>
             <div class="grid-item"><img src="{{ asset('/images/fashion/2.jpg') }}" alt="" srcset="" class="img-fluid"></div>
             <div class="grid-item"><img src="{{ asset('/images/fashion/3.jpg') }}" alt="" srcset="" class="img-fluid"></div>
             <div class="grid-item"><img src="{{ asset('/images/fashion/13.jpg') }}" alt="" srcset="" class="img-fluid"></div>
@@ -51,7 +94,33 @@
             <div class="grid-item"><img src="{{ asset('/images/fashion/Kimi.jpg') }}" alt="" srcset="" class="img-fluid"></div>
             <div class="grid-item"><img src="{{ asset('/images/fashion/image.jpeg') }}" alt="" srcset="" class="img-fluid"></div>
             <div class="grid-item"><img src="{{ asset('/images/fashion/hbz-kim-kardashian-0207-getty-1518104453.jpg') }}" alt="" srcset="" class="img-fluid"></div>
+            <div class="grid-item"><img src="{{ asset('/images/fashion/Kimi.jpg') }}" alt="" srcset="" class="img-fluid"></div>
+            <div class="grid-item"><img src="{{ asset('/images/fashion/image.jpeg') }}" alt="" srcset="" class="img-fluid"></div>
         </div>
+        <div class="footer d-flex flex-row justify-content-around py-4 pt-5">
+            <div class="footer-item m-3 d-flex flex-column align-items-start">
+                <h3 class="footer-h3 mt-3">Newsletter</h3>
+            </div>
+            <div class="footer-item m-3 d-flex flex-column align-items-start">
+                <h3 class="footer-h3 mt-3">Nous contacter</h3>
+            </div>
+            <div class="footer-item m-3 d-flex flex-column align-items-start">
+                <h3 class="footer-h3 mt-3">Plus de services</h3>
+            </div>
+            <div class="footer-item m-3 d-flex flex-column align-items-start">
+                <h3 class="footer-h3 mt-3">Copyright</h3>
+            </div>
+        </div>
+        <script>
+            window.onscroll = function() {myFunction()};
+                var header = document.getElementById("myHeader");
+                var sticky = header.offsetTop;
+                function myFunction() {
+                if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                }
+            }
+        </script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
