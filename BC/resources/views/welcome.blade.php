@@ -57,7 +57,7 @@
                             <a class="nav-link" href="">Boutique en ligne</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Mannéquinat</a>
+                            <a class="nav-link" href="fashion">Mannéquinat</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="">Articles</a>
