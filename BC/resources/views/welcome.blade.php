@@ -35,7 +35,7 @@
         </div>
         <div class="app" id="app">
             <nav class="navbar navbar-expand-lg py-2 sticky-top bg-dark">
-                <a class="navbar-brand" href=""><img src="{{ asset('/wb-logo-light.svg') }}" alt="" height="50" width="200"></a>
+                <a class="navbar-brand" href=""><img src="{{ asset('/images/logo1.png') }}" alt="" height="70" width="80"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -45,7 +45,7 @@
                             <a class="nav-link" href="">Accueil <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">A propos</a>
+                            <a class="nav-link" href="/about">A propos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="">Services</a>
@@ -57,21 +57,13 @@
                             <a class="nav-link" href="">Boutique en ligne</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="fashion">Mannéquinat</a>
+                            <a class="nav-link" href="/fashion">Mannéquinat</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="">Articles</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="">Contacts</a>
-                        </li>
-                        <li class="nav-item dropdown d-none">
-                            <a class="nav-link dropdown-toggle" id="dropdown08" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdown08">
-                                <a class="dropdown-item" href="">Action</a>
-                                <a class="dropdown-item" href="">Another action</a>
-                                <a class="dropdown-item" href="">Something else here</a>
-                            </div>
                         </li>
                     </ul>
                 </div>
@@ -272,9 +264,7 @@
                 <div class="d-flex flex-row mt-3">
                     <a href="https://wa.me/67236500"><img class="fabulous shadow-lg waves-1 md-avatar rounded-circle" src="{{ asset('/social-whatsapp-circle-512.png') }}"/></a>
                     <a href="https://fb.me/"><img class="fabulous shadow-lg waves-2 md-avatar rounded-circle" src="{{ asset('/Facebook_Logo.png') }}"/></a>
-                    <a href="https://twitter.com/armandaboko"><img class="fabulous shadow-lg waves-3 md-avatar rounded-circle" src="{{ asset('/twitter.png') }}"/></a>
-                    <a href="https://instagram.me/"><img class="fabulous shadow-lg waves-4 md-avatar rounded-circle" src="{{ asset('/3D-Instagram-logo-PNG.png') }}"/></a>
-                    <a href="https://instagram.me/"><img class="fabulous shadow-lg waves-4 md-avatar rounded-circle" src="{{ asset('/images/telegram_logo.png') }}"/></a>
+                    <a href="https://fb.me/"><img class="linked-in shadow-lg waves-2" src="{{ asset('/images/LinkedIn-Logos/LI-Logo.png') }}"/></a>
                 </div>
             </div>
         </div>

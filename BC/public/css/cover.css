@@ -108,10 +108,10 @@ h1 {
 }
 
 .grid-container {
+    margin-top: 33px;
     display: grid !important;
     grid-template-columns: auto auto auto auto auto;
     gap: 0px 0px;
-
 }
 
 .img-fluid {

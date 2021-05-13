@@ -23,11 +23,14 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
         <link href="{{ asset('/css/app.css') }}" rel="stylesheet"/>
         <link href="{{ asset('/css/cover.css') }}" rel="stylesheet"/>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
     </head>
     <body>
         <div class="cover-container d-flex flex-column justify-content-center align-items-center text-center">
             <nav class="navbar shadow-lg navbar-expand-lg py-2 bg-dark mb-5" id="myHeader">
-                <a class="navbar-brand" href=""><img src="{{ asset('/wb-logo-light.svg') }}" alt="" height="50" width="200"></a>
+                <a class="navbar-brand" href=""><img src="{{ asset('/images/logo1.png') }}" alt="" height="80" width="80"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -37,7 +40,7 @@
                             <a class="nav-link" href="">Accueil <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">A propos</a>
+                            <a class="nav-link" href="/about">A propos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="">Services</a>
@@ -69,32 +72,32 @@
                 </div>
             </nav>
             <span><em class="fashion-shows"><h4 class="runaway">#runaway</h4></em></span>
-            <h1 class="s-h1">Armanda Boko partage avec vous sa passion pour la mode, Vision sapologie</h1>
+            <h1 class="s-h1">Armanda Boko partage avec vous sa passion pour la photographie, Vision 7ème art</h1>
             <svg version="1.1" id="line_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="10px" xml:space="preserve">
                 <path class="path2" fill="#01a09e" stroke-width="3" stroke="rgb(255, 255, 0)" d="M0 0 l1120 0"/>
             </svg>
             <img src="{{ asset('/images/IMG-20210502-WA0051-removebg-preview.png') }}" alt="" srcset="" class="mt-3 md-avatar rounded-circle" width="50px" height="50px">
         </div>
         <div class="container grid-container full-bottom">
-            <div class="grid-item"><img src="{{ asset('/images/fashion/lfw.jpg') }}" alt="" srcset="" class="img-fluid"></div>
+            <div class="grid-item"><img src="{{ asset('/images/fashion/b298e1ee37e5bd4ad74623965c191742.jpg') }}" alt="" srcset="" class="img-fluid"></div>
             <div class="grid-item"><img src="{{ asset('/images/fashion/2.jpg') }}" alt="" srcset="" class="img-fluid"></div>
-            <div class="grid-item"><img src="{{ asset('/images/fashion/3.jpg') }}" alt="" srcset="" class="img-fluid"></div>
+            <div class="grid-item"><img src="{{ asset('/images/fashion/screen-0.jpg') }}" alt="" srcset="" class="img-fluid"></div>
             <div class="grid-item"><img src="{{ asset('/images/fashion/13.jpg') }}" alt="" srcset="" class="img-fluid"></div>
             <div class="grid-item"><img src="{{ asset('/images/fashion/5.png') }}" alt="" srcset="" class="img-fluid"></div>
             <div class="grid-item"><img src="{{ asset('/images/fashion/6.png') }}" alt="" srcset="" class="img-fluid"></div>
-            <div class="grid-item"><img src="{{ asset('/images/fashion/7.jpg') }}" alt="" srcset="" class="img-fluid"></div>
+            <div class="grid-item"><img src="{{ asset('/images/fashion/fashion-runway-male-model-swag-style-woman.jpg') }}" alt="" srcset="" class="img-fluid"></div>
             <div class="grid-item"><img src="{{ asset('/images/fashion/kim.jpg') }}" alt="" srcset="" class="img-fluid"></div>
             <div class="grid-item"><img src="{{ asset('/images/fashion/15.jpg') }}" alt="" srcset="" class="img-fluid"></div>
             <div class="grid-item"><img src="{{ asset('/images/fashion/16.jpg') }}" alt="" srcset="" class="img-fluid"></div>
             <div class="grid-item"><img src="{{ asset('/images/fashion/11.jpg') }}" alt="" srcset="" class="img-fluid"></div>
             <div class="grid-item"><img src="{{ asset('/images/fashion/14.png') }}" alt="" srcset="" class="img-fluid"></div>
             <div class="grid-item"><img src="{{ asset('/images/fashion/8.jpg') }}" alt="" srcset="" class="img-fluid"></div>
-            <div class="grid-item"><img src="{{ asset('/images/fashion/bg-1.png') }}" alt="" srcset="" class="img-fluid"></div>
+            <div class="grid-item"><img src="{{ asset('/images/fashion/gettyimages-1178072900-2048x2048.jpg') }}" alt="" srcset="" class="img-fluid"></div>
             <div class="grid-item"><img src="{{ asset('/images/fashion/kendall.jpg') }}" alt="" srcset="" class="img-fluid"></div>
             <div class="grid-item"><img src="{{ asset('/images/fashion/Kimi.jpg') }}" alt="" srcset="" class="img-fluid"></div>
             <div class="grid-item"><img src="{{ asset('/images/fashion/image.jpeg') }}" alt="" srcset="" class="img-fluid"></div>
             <div class="grid-item"><img src="{{ asset('/images/fashion/hbz-kim-kardashian-0207-getty-1518104453.jpg') }}" alt="" srcset="" class="img-fluid"></div>
-            <div class="grid-item"><img src="{{ asset('/images/fashion/Kimi.jpg') }}" alt="" srcset="" class="img-fluid"></div>
+            <div class="grid-item"><img src="{{ asset('/images/fashion/gettyimages-597693844-2048x2048.jpg') }}" alt="" srcset="" class="img-fluid"></div>
             <div class="grid-item"><img src="{{ asset('/images/fashion/image.jpeg') }}" alt="" srcset="" class="img-fluid"></div>
         </div>
         <div class="footer d-flex flex-row justify-content-around py-4 pt-5">
@@ -108,7 +111,7 @@
                 <h3 class="footer-h3 mt-3">Plus de services</h3>
             </div>
             <div class="footer-item m-3 d-flex flex-column align-items-start">
-                <h3 class="footer-h3 mt-3">Copyright</h3>
+                <h3 class="footer-h3 mt-3" id="vue">Copyright</h3>
             </div>
         </div>
         <script>
@@ -121,6 +124,8 @@
                 }
             }
         </script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
