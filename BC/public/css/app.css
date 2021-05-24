@@ -294,7 +294,6 @@ b {
 .hastag {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: blue;
-    text-transform: capitalize;
     font-weight: bold;
 }
 
@@ -563,8 +562,11 @@ h5.mt-2 {
 }
 
 .curved-div {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='500' preserveAspectRatio='none' viewBox='0 0 1440 500'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1012%26quot%3b)' fill='none'%3e%3crect width='1440' height='500' x='0' y='0' fill='rgba(50%2c 100%2c 151%2c 0.22)'%3e%3c/rect%3e%3cpath d='M26 500L526 0L796 0L296 500z' fill='url(%23SvgjsLinearGradient1013)'%3e%3c/path%3e%3cpath d='M344.8 500L844.8 0L1254.3 0L754.3 500z' fill='url(%23SvgjsLinearGradient1013)'%3e%3c/path%3e%3cpath d='M636.6 500L1136.6 0L1408.1 0L908.1 500z' fill='url(%23SvgjsLinearGradient1013)'%3e%3c/path%3e%3cpath d='M1414 500L914 0L539 0L1039 500z' fill='url(%23SvgjsLinearGradient1014)'%3e%3c/path%3e%3cpath d='M1122.2 500L622.2 0L520.2 0L1020.2 500z' fill='url(%23SvgjsLinearGradient1014)'%3e%3c/path%3e%3cpath d='M773.4 500L273.4 0L33.39999999999998 0L533.4 500z' fill='url(%23SvgjsLinearGradient1014)'%3e%3c/path%3e%3cpath d='M989.57466594138 500L1440 49.574665941379976L1440 500z' fill='url(%23SvgjsLinearGradient1013)'%3e%3c/path%3e%3cpath d='M0 500L450.42533405862 500L 0 49.574665941379976z' fill='url(%23SvgjsLinearGradient1014)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1012'%3e%3crect width='1440' height='500' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='0%25' y1='100%25' x2='100%25' y2='0%25' id='SvgjsLinearGradient1013'%3e%3cstop stop-color='rgba(4%2c 17%2c 63%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(4%2c 17%2c 63%2c 1)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='100%25' y1='100%25' x2='0%25' y2='0%25' id='SvgjsLinearGradient1014'%3e%3cstop stop-color='rgba(4%2c 17%2c 63%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(4%2c 17%2c 63%2c 1)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
-    box-shadow: inset 0 0 0 2000px #0a3ca7c7;
+    background-image: repeating-radial-gradient(#101edf, #df1071, #f5e61a);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* box-shadow: inset 0 0 0 2000px #240212; */
     color: #fff;
 }
 
@@ -592,4 +594,13 @@ h5.mt-2 {
 .footer-p3 {
     font-size: small;
     color: rgb(255, 255, 255);
+}
+
+.skred {
+    width: 250px;
+    height: 200px;
+}
+
+.swiper-image {
+    width: 50% !important;
 }

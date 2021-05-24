@@ -14,14 +14,14 @@ body {
 
 .upload-book {
     background-color: #fff;
-    width: 40vmax;
+    width: 50vmax;
     -webkit-box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.92) !important;
     box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.92) !important;
 }
 
 .aqua-gradiento {
     background-color: #0E59C1;
-    border-radius: 21px;
+    border-radius: 13px;
     color: #fff !important;
     text-transform: capitalize !important;
     font-weight: bold !important;
@@ -67,3 +67,12 @@ label {
     color: #000 !important;
     font-size: small;
 }
+
+#drop_zone_ipdf_1 {
+    font-weight: bold !important;
+    letter-spacing: 3px !important;
+    text-transform: uppercase !important;
+    color: #000 !important;
+    font-size: 0.8em !important;
+}
+

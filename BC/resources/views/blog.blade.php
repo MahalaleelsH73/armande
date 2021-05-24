@@ -22,14 +22,13 @@
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
         <link href="{{ asset('/css/app.css') }}" rel="stylesheet"/>
-        <link href="{{ asset('/css/cover.css') }}" rel="stylesheet"/>
-        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+        <link href="{{ asset('/css/loader.css') }}" rel="stylesheet"/>
+        <link href="{{ asset('/css/blog.css') }}" rel="stylesheet"/>
     </head>
     <body>
-        <div class="cover-container d-flex flex-column justify-content-center align-items-center text-center">
-            <nav class="navbar shadow-lg navbar-expand-lg py-2 bg-dark mb-5" id="myHeader">
-                <a class="navbar-brand" href=""><img src="{{ asset('/images/logo1.png') }}" alt="" height="80" width="80"></a>
+        <div class="app" id="app">
+            <nav class="navbar navbar-expand-lg py-2 sticky-top bg-dark">
+                <a class="navbar-brand" href=""><img src="{{ asset('/images/logo1.png') }}" alt="" height="70" width="80"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -51,7 +50,7 @@
                             <a class="nav-link" href="">Boutique en ligne</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="fashion">Mannéquinat</a>
+                            <a class="nav-link" href="/fashion">Mannéquinat</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="">Articles</a>
@@ -59,63 +58,82 @@
                         <li class="nav-item">
                             <a class="nav-link" href="">Contacts</a>
                         </li>
-                        <li class="nav-item dropdown d-none">
-                            <a class="nav-link dropdown-toggle" id="dropdown08" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                        </li>
                     </ul>
                 </div>
             </nav>
-            <span><em class="fashion-shows"><h4 class="runaway">#runaway</h4></em></span>
-            <h1 class="s-h1">Armanda Boko partage avec vous sa passion pour la photographie, Vision 7ème art</h1>
+            <div class="sw-1 d-flex flex-column justify-content-center align-items-start mb-5">
+                <div class="m-3">
+                    <div class="d-flex flex-row justify-content-start">
+                        <h5 class="subject m-2">01/01/3001</h5>
+                        <h5 class="subject m-2">Content Microbiology</h5>
+                    </div>
+                    <h1 class="title">Simple, predictable pricing</h1>
+                    <h5 class="subject">Armanda Boko</h5>
+                </div>
+            </div>
+            <div class="container main d-flex flex-column justify-content-center align-items-center">
+                <h3 class="subtitle">The largest of Messi skills behind the stage La Pulga</h3>
+                <img src="{{ asset('/images/Team-of-Medical-Research-Scientists.jpg') }}" alt="" class="img-fluid">
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="{{ asset('/images/istockphoto-1138371379-612x612.jpg') }}" alt="" class="img-fluid figure">
+                    </div>
+                    <div class="grid-item">
+                        <img src="{{ asset('/images/no-room-for-research-scientists-entity.jpg') }}" alt="" class="img-fluid figure">
+                    </div>
+                </div>
+                <p class="content">
+                    Je suis Mêdessou Armande BOKO, née le 6 décembre 1985 à Cotonou (Bénin), diplômée de l’Université de Liège en Sciences Biomédicales (option Assurance Qualité) et Docteur de l’Université d’Abomey-Calavi en Microbiologie.<br><br>
+                    Durant tout mon parcours universitaire, j’ai développé un grand intérêt pour les sciences microbiologiques. Mes expériences capitalisées (formations et stages) dans ce domaine m’ont permis de décrocher des cours dans de grandes universités du Bénin. Ainsi, je veux d’une part, communiquer cette passion aux jeunes scientifiques, toute catégorie confondue, d’autre part, exposer les fruits de mes recherches sur différents sujets aussi bien en Microbiologie qu’en Management de la qualité.<br><br>
+                    Je suis également une grande passionnée de photo depuis plusieurs années. La photo est un canal dont je me sers pour promouvoir ma personne et donner du plaisir aux gens à travers des messages de motivation et d’encouragement. Détentrice de la page Facebook Armande Suprême, mon objectif est d’impacter les jeunes de mon pays, de la sous-région et du monde grâce à la photo. Je pense que c’est un moyen très efficace de faire passer des messages. Merci de me soutenir.<br><br>
+                    Croyante et très attachée aux valeurs chrétiennes, je suis pour l’instant célibataire et sans en enfants.
+                </p>
+            </div>
         </div>
-        <div class="container grid-container full-bottom">
-            <div class="grid-item"><img src="{{ asset('/images/fashion/b298e1ee37e5bd4ad74623965c191742.jpg') }}" alt="" srcset="" class="img-fluid"></div>
-            <div class="grid-item"><img src="{{ asset('/images/fashion/2.jpg') }}" alt="" srcset="" class="img-fluid"></div>
-            <div class="grid-item"><img src="{{ asset('/images/fashion/screen-0.jpg') }}" alt="" srcset="" class="img-fluid"></div>
-            <div class="grid-item"><img src="{{ asset('/images/fashion/13.jpg') }}" alt="" srcset="" class="img-fluid"></div>
-            <div class="grid-item"><img src="{{ asset('/images/fashion/5.png') }}" alt="" srcset="" class="img-fluid"></div>
-            <div class="grid-item"><img src="{{ asset('/images/fashion/6.png') }}" alt="" srcset="" class="img-fluid"></div>
-            <div class="grid-item"><img src="{{ asset('/images/fashion/fashion-runway-male-model-swag-style-woman.jpg') }}" alt="" srcset="" class="img-fluid"></div>
-            <div class="grid-item"><img src="{{ asset('/images/fashion/kim.jpg') }}" alt="" srcset="" class="img-fluid"></div>
-            <div class="grid-item"><img src="{{ asset('/images/fashion/15.jpg') }}" alt="" srcset="" class="img-fluid"></div>
-            <div class="grid-item"><img src="{{ asset('/images/fashion/16.jpg') }}" alt="" srcset="" class="img-fluid"></div>
-            <div class="grid-item"><img src="{{ asset('/images/fashion/11.jpg') }}" alt="" srcset="" class="img-fluid"></div>
-            <div class="grid-item"><img src="{{ asset('/images/fashion/14.png') }}" alt="" srcset="" class="img-fluid"></div>
-            <div class="grid-item"><img src="{{ asset('/images/fashion/8.jpg') }}" alt="" srcset="" class="img-fluid"></div>
-            <div class="grid-item"><img src="{{ asset('/images/fashion/gettyimages-1178072900-2048x2048.jpg') }}" alt="" srcset="" class="img-fluid"></div>
-            <div class="grid-item"><img src="{{ asset('/images/fashion/kendall.jpg') }}" alt="" srcset="" class="img-fluid"></div>
-            <div class="grid-item"><img src="{{ asset('/images/fashion/Kimi.jpg') }}" alt="" srcset="" class="img-fluid"></div>
-            <div class="grid-item"><img src="{{ asset('/images/fashion/image.jpeg') }}" alt="" srcset="" class="img-fluid"></div>
-            <div class="grid-item"><img src="{{ asset('/images/fashion/hbz-kim-kardashian-0207-getty-1518104453.jpg') }}" alt="" srcset="" class="img-fluid"></div>
-            <div class="grid-item"><img src="{{ asset('/images/fashion/gettyimages-597693844-2048x2048.jpg') }}" alt="" srcset="" class="img-fluid"></div>
-            <div class="grid-item"><img src="{{ asset('/images/fashion/image.jpeg') }}" alt="" srcset="" class="img-fluid"></div>
-        </div>
-        <div class="footer d-flex flex-row justify-content-around py-4 pt-5">
+        <div class="footer d-flex flex-row justify-content-around py-4 pt-5 mt-5">
             <div class="footer-item m-3 d-flex flex-column align-items-start">
                 <h3 class="footer-h3 mt-3">Newsletter</h3>
             </div>
             <div class="footer-item m-3 d-flex flex-column align-items-start">
-                <h3 class="footer-h3 mt-3">Nous contacter</h3>
+                <h3 class="footer-h3 mt-3">Contacts</h3>
             </div>
             <div class="footer-item m-3 d-flex flex-column align-items-start">
-                <h3 class="footer-h3 mt-3">Plus de services</h3>
+                <h3 class="footer-h3 mt-3">Services</h3>
             </div>
             <div class="footer-item m-3 d-flex flex-column align-items-start">
-                <h3 class="footer-h3 mt-3" id="vue">Copyright</h3>
+                <h3 class="footer-h3 mt-3">Copyright</h3>
             </div>
         </div>
+        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script>
-            window.onscroll = function() {myFunction()};
-                var header = document.getElementById("myHeader");
-                var sticky = header.offsetTop;
-                function myFunction() {
-                if (window.pageYOffset > sticky) {
-                    header.classList.add("sticky");
-                }
-            }
+            var swiper = new Swiper('.swiper-container', {
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'progressbar',
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
         </script>
-        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+        <script>
+            gsap.from(".sw-1-h1", {duration: 3, x: 300, opacity: 0, scale: 0.5});
+            gsap.from(".box", {
+                duration: 2,
+                scale: 0.5,
+                opacity: 0,
+                delay: 0.5,
+                stagger: 0.2,
+                ease: "elastic",
+                force3D: true
+            });
+        </script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>

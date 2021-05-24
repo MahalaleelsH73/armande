@@ -89,35 +89,34 @@
             <div class="container first-xxl">
                 <div class="wrapper">
                     <p class="introline">Livres</p>
-                    {{-- <h1 class="bigline">Consultés</1> --}}
                 </div>
                 <div class="d-flex flex-row justify-content-center">
                     <div class="view m-4">
                         <img src="{{ asset('/images/livres/1260258998.jpeg') }}" class="img-fluid box" alt="">
                         <div class="mask d-flex flex-column flex-center over-view-blend">
                             <h5 class="index-author">Armanda Boko</h5>
-                            <button type="button" class="btn btn-outline-info waves-effect">Télécharger</button>
+                            <button type="button" class="btn btn-outline-info waves-effect">Voir plus</button>
                         </div>
                     </div>
                     <div class="view m-4">
                         <img src="{{ asset('/images/livres/RPX526.jpg') }}" class="img-fluid box" alt="">
                         <div class="mask d-flex flex-column flex-center over-view-blend">
                             <h5 class="index-author">Armanda Boko</h5>
-                            <button type="button" class="btn btn-outline-info waves-effect">Télécharger</button>
+                            <button type="button" class="btn btn-outline-info waves-effect">Voir plus</button>
                         </div>
                     </div>
                     <div class="view m-4">
                         <img src="{{ asset('/images/livres/MICROBIOLOGY.jpg') }}" class="img-fluid box" alt="">
                         <div class="mask d-flex flex-column flex-center over-view-blend">
                             <h5 class="index-author">Armanda Boko</h5>
-                            <button type="button" class="btn btn-outline-info waves-effect">Télécharger</button>
+                            <button type="button" class="btn btn-outline-info waves-effect">Voir plus</button>
                         </div>
                     </div>
                     <div class="view m-4">
                         <img src="{{ asset('/images/livres/Jawetz-Melnick-Adelbergs-Medical-Microbiology-28-E.jpg') }}" class="img-fluid box" alt="">
                         <div class="mask d-flex flex-column flex-center over-view-blend">
                             <h5 class="index-author">Armanda Boko</h5>
-                            <button type="button" class="btn btn-outline-info waves-effect">Télécharger</button>
+                            <button type="button" class="btn btn-outline-info waves-effect">Voir plus</button>
                         </div>
                     </div>
                 </div>
@@ -141,7 +140,6 @@
                                 Sorry, your browser doesn't support embedded videos.
                             </video>
                             <div class="mask flex-center d-flex flex-column red-dg">
-
                             </div>
                         </div>
                     </div>
@@ -150,11 +148,11 @@
                     <div class="d-flex flex-row justify-content-between align-items-center text-center">
                         <h2 class="hastag">Les derniers articles publiés</h2>
                     </div>
-                    <div class="row">
+                    <div class="row mb-1 mt-1">
                         <div class="col-md-6 col-sm-12">
-                            <div class="d-flex flex-row">
+                            <div class="d-flex flex-row mb-1 mt-1">
                                 <div class="article-cover-img">
-                                    <img class="img-fluid v-1" src="{{ asset('/images/61bEw2jySNL.jpg') }}" alt="">
+                                    <img class="img-fluid v-1 skred" src="{{ asset('/images/61bEw2jySNL.jpg') }}" alt="">
                                     <img class="img-fluid v-2" src="{{ asset('/images/1552885141-5048.jpg') }}" alt="">
                                 </div>
                                 <div class="d-flex flex-column">
@@ -169,9 +167,9 @@
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-12">
-                            <div class="d-flex flex-row">
+                            <div class="d-flex flex-row mb-1 mt-1">
                                 <div class="article-cover-img">
-                                    <img class="img-fluid" src="{{ asset('/images/61bEw2jySNL.jpg') }}" alt="">
+                                    <img class="img-fluid skred" src="{{ asset('/images/no-room-for-research-scientists-entity.jpg') }}" alt="">
                                 </div>
                                 <div class="d-flex flex-column">
                                     <h2 class="article-author m-1">Auteur</h2>
@@ -185,72 +183,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6 col-sm-12">
-                            <div class="d-flex flex-row">
-                                <div class="article-cover-img">
-                                    <img class="img-fluid" src="{{ asset('/images/61bEw2jySNL.jpg') }}" alt="">
-                                </div>
-                                <div class="d-flex flex-column">
-                                    <h2 class="article-author m-1">Auteur</h2>
-                                    <h1 class="article-title m-1">Microbiology - Latest research and news | Nature</h1>
-                                    <div class="d-flex flex-row">
-                                        <h5 class="article-pub m-1">1 hour ago</h5>
-                                        <i class="far fa-eye m-1"></i>
-                                        <h5 class="article-stats m-1">300K</h5>
-                                    </div>
-                                </div>
-                            </div>
+                </div>
+                <div class="swiper-container mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="{{  asset('/images/188406753_871172026944652_7598468743144416263_n.jpg')  }}" alt="" class="img-fluid swiper-image">
                         </div>
-                        <div class="col-md-6 col-sm-12">
-                            <div class="d-flex flex-row">
-                                <div class="article-cover-img">
-                                    <img class="img-fluid" src="{{ asset('/images/61bEw2jySNL.jpg') }}" alt="">
-                                </div>
-                                <div class="d-flex flex-column">
-                                    <h2 class="article-author m-1">Auteur</h2>
-                                    <h1 class="article-title m-1">Microbiology - Latest research and news | Nature</h1>
-                                    <div class="d-flex flex-row">
-                                        <h5 class="article-pub m-1">1 hour ago</h5>
-                                        <i class="far fa-eye m-1"></i>
-                                        <h5 class="article-stats m-1">300K</h5>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="swiper-slide">
+                            <img src="{{  asset('/images/189211455_1161760374338908_7519296135356670062_n.jpg')  }}" alt="" class="img-fluid swiper-image">
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-sm-12">
-                            <div class="d-flex flex-row">
-                                <div class="article-cover-img">
-                                    <img class="img-fluid" src="{{ asset('/images/61bEw2jySNL.jpg') }}" alt="">
-                                </div>
-                                <div class="d-flex flex-column">
-                                    <h2 class="article-author m-1">Auteur</h2>
-                                    <h1 class="article-title m-1">Microbiology - Latest research and news | Nature</h1>
-                                    <div class="d-flex flex-row">
-                                        <h5 class="article-pub m-1">1 hour ago</h5>
-                                        <i class="far fa-eye m-1"></i>
-                                        <h5 class="article-stats m-1">300K</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-12">
-                            <div class="d-flex flex-row">
-                                <div class="article-cover-img">
-                                    <img class="img-fluid" src="{{ asset('/images/61bEw2jySNL.jpg') }}" alt="">
-                                </div>
-                                <div class="d-flex flex-column">
-                                    <h2 class="article-author m-1">Auteur</h2>
-                                    <h1 class="article-title m-1">Microbiology - Latest research and news | Nature</h1>
-                                    <div class="d-flex flex-row">
-                                        <h5 class="article-pub m-1">1 hour ago</h5>
-                                        <i class="far fa-eye m-1"></i>
-                                        <h5 class="article-stats m-1">300K</h5>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="swiper-slide">
+                            <img src="{{  asset('/images/191124875_452531769410433_7075827567887535849_n.jpg')  }}" alt="" class="img-fluid swiper-image">
                         </div>
                     </div>
                 </div>
@@ -275,8 +218,6 @@
                     <div class="d-flex flex-row justify-content-center align-items-center text-center">
                         <img src="{{   asset('/images/mastercard.png')  }}" alt="" srcset="" class="img-fluid m-2" width="70">
                         <img src="{{   asset('/images/visa-credit-card-logo-512-1613502609560.png')  }}" alt="" srcset="" class="img-fluid m-2" width="70">
-                        <img src="{{   asset('/images/btc.png')  }}" alt="" srcset="" class="img-fluid m-2" width="70">
-                        <img src="{{   asset('/images/etherum.png')  }}" alt="" srcset="" class="img-fluid m-2" width="100">
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12">
@@ -331,12 +272,12 @@
             <h5 class="text-center mt-2">Support Clients</h5>
         </div>
         <div class="footer-item m-3 d-flex flex-column align-items-start">
-            <h3 class="footer-h3 mt-3">Nous contacter</h3>
+            <h3 class="footer-h3 mt-3">Contacts</h3>
             <h5 class="text-center mt-2">armanda.boko@smart.app</h5>
             <h2 class="hastag">Follow Us</h2>
         </div>
         <div class="footer-item m-3 d-flex flex-column align-items-start">
-            <h3 class="footer-h3 mt-3">Plus de services</h3>
+            <h3 class="footer-h3 mt-3">Services</h3>
             <h5 class="text-center mt-2">Mannequinat et Mode</h5>
             <h5 class="text-center mt-2">Assistance</h5>
             <h5 class="text-center mt-2">Motivation & Mentoring</h5>
@@ -348,6 +289,21 @@
     </div>
         <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                },
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+            });
+        </script>
+
         <script>
             var swiper = new Swiper('.swiper-container', {
                 autoplay: {
@@ -379,15 +335,6 @@
             var lines = new TimelineMax({repeat:-1, yoyo:true, repeatDelay:2})
             .to('.bigline',1,{x:'0%'})
             .to('.introline',1,{x:'0%'}, "+=0.3");
-        </script>
-        <script>
-            // var app = document.getElementById("app");
-            // var loader = document.getElementById("loader");
-            // app.style.display = "none";
-            // let loading = setTimeout(() => {
-            //     app.style.display = "block";
-            //     loader.style.display = "none";
-            // }, 4000);
         </script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
